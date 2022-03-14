@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Math Magicians</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
@@ -19,7 +20,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          By Jerry Owusu
         </a>
       </header>
     </div>
