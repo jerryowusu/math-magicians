@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-clone repo: https://github.com/jerryowusu/LeaderBoard.git
+clone repo: https://github.com/jerryowusu/math-magicians.git
 
 A Web Browser (preferably Google Chrome)
 
