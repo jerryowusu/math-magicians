@@ -1,6 +1,8 @@
 # Project Name
 Math Magicians
 
+An educational project for making a React calculator
+
 ## Live Demo
 
 will be updated soon 
