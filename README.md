@@ -1,7 +1,11 @@
 # Project Name
 Math Magicians
 
+
+An educational project for making a React calculator
+
 ![Screenshot (43)](https://user-images.githubusercontent.com/65233860/158483742-7239cff0-d705-49c7-b021-26df809b8c51.png)
+
 
 ## Live Demo
 
