@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Button from './Button';
 import Display from './Display';
 
-const Calculator = () => (
-  <div className="bg-primary calculator">
-    <Display />
-    <div className="buttons">
-      <Button />
-    </div>
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
 
-  </div>
-);
+  render() {
+    return (
+      <div className="calculator">
+        <Display />
+        <Button />
+      </div>
+    );
+  }
+}
 
 export default Calculator;
