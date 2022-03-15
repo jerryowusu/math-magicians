@@ -41,7 +41,7 @@ body {
 }
 
 .operator {
-  background-color:  hsl(30, 80%, 54%);
+  background-color: hsl(30, 80%, 54%);
 }
 
 .zero {
@@ -50,10 +50,10 @@ body {
   padding-top: 15px;
 }
 
-  button:hover {
-    background-color: rgb(71, 184, 43);
-  }
+button:hover {
+  background-color: rgb(71, 184, 43);
+}
 
-  .equals:hover {
-    background-color: rgb(228, 39, 15);
-  }
+.equals:hover {
+  background-color: rgb(228, 39, 15);
+}
