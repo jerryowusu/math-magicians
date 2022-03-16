@@ -1,37 +1,52 @@
 import React, { Component } from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.props = props;
+
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+
+    this.handleEvent = this.handleEvent.bind(this);
   }
 
+  handleEvent = ((buttonName) => {
+    this.setState((state) => calculate(state, buttonName));
+  })
+
   render() {
+    const { total, operation, next } = this.state;
     return (
       <div className="calculator">
-        <div className="display"> 0 </div>
+        <div className="display">
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
+        </div>
         <div className="figures">
-          <button type="submit" className="clear num">AC</button>
-          <button type="submit" className="ad num">+/-</button>
-          <button type="submit" className="modulo num">%</button>
-          <button type="submit" className="divide operator">&divide;</button>
-          <button type="submit" className="num">7</button>
-          <button type="submit" className="num">8</button>
-          <button type="submit" className="num">9</button>
-          <button type="submit" className="times operator">&times;</button>
-          <button type="submit" className="num">4</button>
-          <button type="submit" className="num">5</button>
-          <button type="submit" className="num">6</button>
-          <button type="submit" className="clear operator">&ndash;</button>
-          <button type="submit" className="num">1</button>
-          <button type="submit" className="num">2</button>
-          <button type="submit" className="num">3</button>
-          <button type="submit" className="add operator">+</button>
-          <button type="submit" className="zero">0</button>
-          <button type="submit" className="num">.</button>
-          <button type="submit" className="equals operator">=</button>
+          <button type="button" className="clear num" name="AC" onClick={(e) => this.handleEvent(e.target.name)}>AC</button>
+          <button type="button" className="ad num" name="+/-" onClick={(e) => this.handleEvent(e.target.name)}>+/-</button>
+          <button type="button" className="modulo num" name="%" onClick={(e) => this.handleEvent(e.target.name)}>%</button>
+          <button type="button" className="divide operator" name="÷" onClick={(e) => this.handleEvent(e.target.name)}>÷</button>
+          <button type="button" className="num" name="7" onClick={(e) => this.handleEvent(e.target.name)}>7</button>
+          <button type="button" className="num" name="8" onClick={(e) => this.handleEvent(e.target.name)}>8</button>
+          <button type="button" className="num" name="9" onClick={(e) => this.handleEvent(e.target.name)}>9</button>
+          <button type="button" className="clear operator" name="x" onClick={(e) => this.handleEvent(e.target.name)}>x</button>
+          <button type="button" className="num" name="4" onClick={(e) => this.handleEvent(e.target.name)}>4</button>
+          <button type="button" className="num" name="5" onClick={(e) => this.handleEvent(e.target.name)}>5</button>
+          <button type="button" className="num" name="6" onClick={(e) => this.handleEvent(e.target.name)}>6</button>
+          <button type="button" className="clear operator" name="-" onClick={(e) => this.handleEvent(e.target.name)}>&ndash;</button>
+          <button type="button" className="num" name="1" onClick={(e) => this.handleEvent(e.target.name)}>1</button>
+          <button type="button" className="num" name="2" onClick={(e) => this.handleEvent(e.target.name)}>2</button>
+          <button type="button" className="num" name="3" onClick={(e) => this.handleEvent(e.target.name)}>3</button>
+          <button type="button" className="add operator" name="+" onClick={(e) => this.handleEvent(e.target.name)}>+</button>
+          <button type="button" className="zero" name="0" onClick={(e) => this.handleEvent(e.target.name)}>0</button>
+          <button type="button" className="num" name="." onClick={(e) => this.handleEvent(e.target.name)}>.</button>
+          <button type="button" className="equals operator" name="=" onClick={(e) => this.handleEvent(e.target.name)}>=</button>
         </div>
       </div>
     );
