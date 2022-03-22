@@ -23,7 +23,7 @@ body {
 .calc-body {
   display: flex;
   margin-top: 10rem;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .calculator {
@@ -65,6 +65,7 @@ body {
 }
 
 .letsdo {
+  margin-left: 0;
   margin-right: 5rem;
 }
 
