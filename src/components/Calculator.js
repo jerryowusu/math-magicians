@@ -14,6 +14,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
+      <h1 className="letdo">Let&#39;s do some math!</h1>
       <div className="display">
         <span>{cal.total}</span>
         <span>{cal.operation}</span>

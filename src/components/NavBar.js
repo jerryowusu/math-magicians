@@ -20,7 +20,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div>
+    <div className="navbar">
       <h1>Math Magicians</h1>
       <nav className="NavBar">
         <ul>
