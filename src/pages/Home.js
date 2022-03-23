@@ -1,9 +1,10 @@
+/* eslint-disable jsx-quotes */
 import React from 'react';
 import { Route } from 'react-router-dom';
 
 const Home = () => (
-  <Route path="/">
-    <div className="container">
+  <Route path='/'>
+    <div className='container'>
       <h1>Welcome to our page!</h1>
       <p>
         Math magicians is a website for all fans of mathematics.

@@ -1,15 +1,14 @@
+/* eslint-disable jsx-quotes */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from '../Home';
 
-it('Home component is working', () => {
+it('should display the home page content 1', () => {
   const tree = renderer
     .create(
       <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
+        <Home />
       </Router>,
     )
     .toJSON();

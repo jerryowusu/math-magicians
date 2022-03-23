@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quote component is working 1`] = `
+exports[`should display the home page content 1 1`] = `
 <div
   className="container"
 >
@@ -9,3 +9,4 @@ exports[`Quote component is working 1`] = `
   </h3>
 </div>
 `;
+
