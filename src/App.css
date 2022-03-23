@@ -77,7 +77,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color4);
+  background-color: var(--color1);
   box-shadow: var(--box-shadow2);
   padding: 15px 10px;
   color: var(--color2);
