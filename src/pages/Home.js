@@ -26,7 +26,6 @@ const Home = () => (
         simpler tasks and allows the student to devote
         more time in understanding the problem Read a
         random math-related quote.
-
       </p>
     </div>
   </Route>
