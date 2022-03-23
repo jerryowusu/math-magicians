@@ -9,7 +9,7 @@ it('should display the home page content 1', () => {
     .create(
       <Router>
         <Home />
-      </Router>
+      </Router>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
