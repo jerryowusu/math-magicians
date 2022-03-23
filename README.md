@@ -9,7 +9,7 @@ An educational project for making a React calculator
 
 ## Live Demo
 
-[Live Demo](https://jerryowusu.github.io/math-magicians/src/index.js)
+[Live Demo](https://jerryowusu.github.io/math-magicians/)
 
 ## Built With!
 - JavaScript.
