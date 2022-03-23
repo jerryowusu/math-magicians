@@ -10,14 +10,3 @@ exports[`should display the home page content 1 1`] = `
 </div>
 `;
 
-exports[`should display the home page content 1 2`] = `
-  <div className="container">
-    <h3>
-      Mathematics is the result of mysterious powers which no one understands,
-      and which the unconscious recognition of beauty must play an important
-      part. Out of an infinity of designs a mathematician chooses one pattern
-      for beauty’s sake and pulls it down to earth. — Marston Morse, American
-      mathematician
-    </h3>
-  </div>
-`;
