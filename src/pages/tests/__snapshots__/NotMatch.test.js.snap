@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the 404 page if there is no page 1 1`] = `
+<div>
+    <h3>No match for this page</h3>
+</div>
+`;
+
+exports[`should display the home page content 1 1`] = `
+<div>
+  <h3>
+    No match for this page
+  </h3>
+</div>
+`;
