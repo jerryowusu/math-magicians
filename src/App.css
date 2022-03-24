@@ -151,6 +151,7 @@ body {
  -ms-transform: scaleY(1.6);
  -o-transform: scaleY(1.6);
  background-color: var(--color2);
+ margin-top: 20rem;
 }
 
 .container h1 {
