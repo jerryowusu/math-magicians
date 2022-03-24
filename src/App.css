@@ -80,8 +80,6 @@ body {
 }
 
 .letsdo {
-  /* margin-left: 0;
-  margin-right: 5rem; */
   margin: auto;
 }
 
@@ -128,20 +126,31 @@ body {
 }
 
 .container {
-  text-align: center;
-  margin: 15rem auto;
-  width: 92%;
-  /* margin-right: 2rem; */
-  /* margin-left: 2rem; */
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
-  border-radius: 2rem;
-  background-color: var(--color4);
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+ text-align: center;
+ margin: 15rem auto;
+ width: 92%;
+ -webkit-box-shadow: var(--box-shadow);
+ box-shadow: var(--box-shadow);
+ border-radius: 2rem;
+ background-color: var(--color4);
+ -webkit-border-radius: 2rem;
+ -moz-border-radius: 2rem;
+ -ms-border-radius: 2rem;
+ -o-border-radius: 2rem;
+ transition: 1000ms linear;
+ -webkit-transition: 1000ms linear;
+ -moz-transition: 1000ms linear;
+ -ms-transition: 1000ms linear;
+ -o-transition: 1000ms linear;
+}
 
+.container:hover {
+ transform: scaleY(1.6);
+ -webkit-transform: scaleY(1.6);
+ -moz-transform: scaleY(1.6);
+ -ms-transform: scaleY(1.6);
+ -o-transform: scaleY(1.6);
+ background-color: var(--color2);
 }
 
 .container h1 {
@@ -162,60 +171,4 @@ body {
 
 .container h3 {
   padding: 1.5rem;
-  /* margin: 3rem 10rem; */
 }
-
-
-/* 
-@media screen and (min-width: 765px) {
-  .container {
-  margin: 5rem auto;
-  height: 300px;
-  font-size: 0.9rem;
-  }
-
-  .letsdo {
-    margin-left: 0;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .calc-body {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    justify-content: space-between;
-  }
-
-  .calculator {
-    height: 60%;
-    font-size: 1rem;
-  }
-
-  .container h1 {
-    font-size: 1.8rem;
-    height: 10px;
-  }
-
-  .container h3 {
-  padding: 1.5rem;
-  margin: 5rem 3rem;
-  font-size: 1.2rem;
-  }  
-
-  .container p {
-    letter-spacing: 1px;
-    padding: 2rem;
-    border-radius: 4rem;
-    line-height: 1rem;
-    font-size: 0.8rem;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 610px) {
-  /* .container h3 {
-  font-size: 0.9rem;
-  }   */
-  
-/* } */
