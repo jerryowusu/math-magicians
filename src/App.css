@@ -9,27 +9,42 @@
   --color2: #fff;
   --color3: hsl(30, 80%, 54%);
   --color4: #65b1dd;
-  --box-shadow: 2px 5px 15px 1px #000;
+  --box-shadow: 2px 1px 15px 1px #000;
   --box-shadow2: 2px 2px 10px 0 #000;
 }
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #65b1dd;
 }
 
 .calc-body {
   display: flex;
-  margin-top: 10rem;
+  flex-direction: column;
+  margin-top: 15rem;
   justify-content: space-between;
 }
 
 .calculator {
-  width: 450px;
-  height: 540px;
+  width: 98%;
+  margin-top: 15%;
   font-size: 1.5rem;
+  box-shadow: var(--box-shadow2);
+  transition: 400ms linear;
+  -webkit-transition: 400ms linear;
+  -moz-transition: 400ms linear;
+  -ms-transition: 400ms linear;
+  -o-transition: 400ms linear;
+}
+
+.calculator:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 .display {
@@ -65,15 +80,16 @@ body {
 }
 
 .letsdo {
-  margin-left: 0;
-  margin-right: 5rem;
+  /* margin-left: 0;
+  margin-right: 5rem; */
+  margin: auto;
 }
 
 .navbar {
   position: fixed;
-  top: 10px;
-  left: 1%;
-  width: 98%;
+  top: 3%;
+  left: 2%;
+  width: 96%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,17 +129,27 @@ body {
 
 .container {
   text-align: center;
-  margin: 5rem auto;
+  margin: 15rem auto;
+  width: 92%;
+  /* margin-right: 2rem; */
+  /* margin-left: 2rem; */
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   border-radius: 2rem;
+  background-color: var(--color4);
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
 }
 
 .container h1 {
   font-weight: 600;
+  color: var(--color1);
   letter-spacing: 1px;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2rem;
   height: 70%;
 }
 
@@ -136,5 +162,60 @@ body {
 
 .container h3 {
   padding: 1.5rem;
-  margin: 3rem 10rem;
+  /* margin: 3rem 10rem; */
 }
+
+
+/* 
+@media screen and (min-width: 765px) {
+  .container {
+  margin: 5rem auto;
+  height: 300px;
+  font-size: 0.9rem;
+  }
+
+  .letsdo {
+    margin-left: 0;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .calc-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    justify-content: space-between;
+  }
+
+  .calculator {
+    height: 60%;
+    font-size: 1rem;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+    height: 10px;
+  }
+
+  .container h3 {
+  padding: 1.5rem;
+  margin: 5rem 3rem;
+  font-size: 1.2rem;
+  }  
+
+  .container p {
+    letter-spacing: 1px;
+    padding: 2rem;
+    border-radius: 4rem;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 610px) {
+  /* .container h3 {
+  font-size: 0.9rem;
+  }   */
+  
+/* } */
