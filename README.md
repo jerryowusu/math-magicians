@@ -9,11 +9,8 @@ An educational project for making a React calculator
 
 ## Live Demo
 
-[Github Demo](https://jerryowusu.github.io/math-magicians/)
-<br>
 [Heroku Demo](https://jmath-magicians.herokuapp.com/)
-<br>
-[Netlify Demo](https://exquisite-naiad-274d74.netlify.app/)
+
 
 ## Built With!
 - JavaScript.
